@@ -1,0 +1,18 @@
+<div class="main-container">
+    <div class="input-container">
+        <input type="text" id="details" placeholder="add details...">
+        <button name="addTask" (click)="getDetails()">Add</button>
+    </div>
+
+    <div class="tasks-container" *ngFor="let Task of Tasks; let i=index;">
+        <div class="task" *ngIf="!Task.completed">
+            <input type="checkbox" (click)="changeState(i)">
+            <p style="word-break: break-all">{{Task.details}}</p>
+        </div>
+        
+        <div class="task completed" *ngIf="Task.completed">
+            <input type="checkbox" checked (click)="changeState(i)">
+            <p style="word-break: break-all">{{Task.details}}</p>
+        </div>
+    </div>
+</div>

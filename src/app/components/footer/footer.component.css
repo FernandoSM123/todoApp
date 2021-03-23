@@ -1,0 +1,12 @@
+div{
+display: flex;
+align-items: center;
+justify-content: center;
+height: 60px;
+background-color: #bfbfbf;
+}
+
+p{
+    text-align: center;
+    padding: 15px;
+}

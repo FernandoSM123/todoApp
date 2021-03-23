@@ -1,0 +1,65 @@
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-height: 350px;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    width: 75%;
+    padding: 5px;    
+}
+
+.tasks-container{
+    width: 75%;
+}
+
+.task{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    margin: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    border: black solid 1px;
+    border-radius: 5px;
+    background-color: #ffe680;
+}
+
+input[type=checkbox]{
+    margin-right: 5px;
+}
+
+input[type=text]{
+border-radius: 5px;
+margin-right: 15px;
+width: 85%;
+padding: 10px;
+font-size: 12px;
+border: 1px solid #8c8c8c;    
+}
+
+button[name=addTask]{
+width: 15%;
+background-color: #0066cc;
+text-align: center;
+color: white;
+border-radius:5px;
+border: none;
+font-size: 12px;
+font-weight: bold;
+}
+
+button[name=addTask]:hover{
+    background-color: #004d99;
+}
+
+.completed{
+    text-decoration:line-through;
+}

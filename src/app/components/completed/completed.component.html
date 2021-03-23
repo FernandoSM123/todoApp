@@ -1,0 +1,15 @@
+<div class="main-container">
+
+    <div class="tasks-container" *ngFor="let Task of Tasks; let i=index;">
+        <div class="task completed" *ngIf="Task.completed">
+            <input type="checkbox" checked (click)="changeState(i)">
+            <div class="task-details">
+                <p style="word-break: break-all">{{Task.details}}</p>
+                <button title="Eliminar" name="deleteTask" (click)="delete(i)"><img src="../../../assets/imgs/TrashCan1.png"></button>
+            </div>
+        </div>
+    </div>
+    <div class="button-container">
+        <button name="deleteAll" (click)="deleteAll()">Delete All</button>
+    </div>
+</div>

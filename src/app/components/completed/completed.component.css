@@ -1,0 +1,76 @@
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-height: 350px;
+}
+
+.tasks-container{
+    width: 75%;
+}
+
+.task{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    margin: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    border: black solid 1px;
+    border-radius: 5px;
+    background-color: #ffe680;
+}
+
+.task-details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.button-container{
+    width: 75%;
+    margin: 5px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+input[type=checkbox]{
+    margin-right: 5px;
+}
+
+button[name=deleteAll]{
+    width: 20%;
+    background-color: #ff5c33;
+    text-align: center;
+    color: white;
+    border-radius:5px;
+    border: none;
+    font-size: 12px;
+    font-weight: bold;
+    height: 30px;
+}
+
+button[name=deleteTask]{
+border: none;
+background-color: #ffe680;
+display: flex;
+align-items: center;
+}
+
+button[name=deleteTask]:hover{
+    background-image: url("../../../assets/imgs/TrashCan.png");
+}
+
+button[name=deleteAll]:hover{
+    background-color: #ff3300;
+}
+
+.completed{
+    text-decoration:line-through;
+}
